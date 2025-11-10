@@ -241,6 +241,7 @@ fn build<B: Read>(reader: &mut EventReader<B>, mut elem: Element) -> Result<Elem
             Ok(XmlEvent::StartDocument { .. }) | Ok(XmlEvent::EndDocument) => {
                 return Err(ParseError::CannotParse)
             }
+            Ok(XmlEvent::Doctype { .. }) => (),
             Err(e) => return Err(ParseError::MalformedXml(e)),
         }
     }
@@ -315,6 +316,7 @@ impl Element {
                 }
                 Ok(XmlEvent::EndElement { .. }) => (),
                 Ok(XmlEvent::EndDocument) => return Ok(root_nodes),
+                Ok(XmlEvent::Doctype { .. }) => (),
                 Err(e) => return Err(ParseError::MalformedXml(e)),
             }
         }
