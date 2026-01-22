@@ -1,0 +1,3 @@
+# Use rustfmt defaults for this project
+# This overrides any parent directory rustfmt.toml settings
+edition = "2021"
