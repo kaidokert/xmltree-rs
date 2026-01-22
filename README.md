@@ -20,7 +20,7 @@ Add the following to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-xmltree-ns = "0.12"
+xmltree-ns = "0.13"
 ```
 
 ### Feature-flags
