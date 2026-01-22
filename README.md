@@ -37,11 +37,7 @@ use a version of xmltree that matches the version of xml you are using:
 
 | xml version    | xmltree version |
 |----------------|-----------------|
-| 1              | 0.12            |
-| 0.8            | 0.11            |
-| 0.7            | 0.8             |
-| 0.6            | 0.6             |
-
+| 1              | 0.13            |
 
 ## Example
 
