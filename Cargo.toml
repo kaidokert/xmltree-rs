@@ -1,6 +1,6 @@
 [package]
 name = "xmltree-ns"
-version = "0.12.1"
+version = "0.13.1"
 authors = ["Andrew Chin <achin@eminence32.net>"]
 description = "Parse an XML file into a simple tree-like structure"
 documentation = "https://docs.rs/xmltree/"
