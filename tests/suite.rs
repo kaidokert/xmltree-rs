@@ -1,9 +1,9 @@
-extern crate xmltree;
+extern crate xmltree_ns;
 
 use std::borrow::Cow;
 use std::fs::File;
 use std::io::Cursor;
-use xmltree::*;
+use xmltree_ns::*;
 
 #[test]
 fn test_01() {

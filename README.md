@@ -1,7 +1,12 @@
 xmltree-rs
 ==========
 
-[Documentation](https://docs.rs/xmltree/)
+> [!WARNING]
+> This is a fork of the "real" `xmltree` with support for attribute namespaces. For more information, see this issue: https://github.com/eminence/xmltree-rs/issues/13
+>
+> You should use the real `xmltree` crate instead!
+
+[Documentation](https://docs.rs/xmltree-ns/)
 
 A small library for parsing an XML file into an in-memory tree structure.
 
@@ -15,7 +20,7 @@ Add the following to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-xmltree = "0.12"
+xmltree-ns = "0.13"
 ```
 
 ### Feature-flags
@@ -32,14 +37,10 @@ use a version of xmltree that matches the version of xml you are using:
 
 | xml version    | xmltree version |
 |----------------|-----------------|
-| 1              | 0.12            |
-| 0.8            | 0.11            |
-| 0.7            | 0.8             |
-| 0.6            | 0.6             |
-
+| 1              | 0.13            |
 
 ## Example
 
 See the documentation for some examples:
 
-https://docs.rs/xmltree/
+https://docs.rs/xmltree-ns/
