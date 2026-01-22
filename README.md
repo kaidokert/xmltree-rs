@@ -6,7 +6,7 @@ xmltree-rs
 >
 > You should use the real `xmltree` crate instead!
 
-[Documentation](https://docs.rs/xmltree/)
+[Documentation](https://docs.rs/xmltree-ns/)
 
 A small library for parsing an XML file into an in-memory tree structure.
 
@@ -43,4 +43,4 @@ use a version of xmltree that matches the version of xml you are using:
 
 See the documentation for some examples:
 
-https://docs.rs/xmltree/
+https://docs.rs/xmltree-ns/
