@@ -5,7 +5,7 @@
 //! # Example
 //!
 //! ```no_run
-//! use xmltree::{AttributeName, Element};
+//! use xmltree_ns::{AttributeName, Element};
 //! use std::fs::File;
 //!
 //! let data: &'static str = r##"
