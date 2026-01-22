@@ -558,7 +558,7 @@ where
     }
 }
 
-impl<'a> ElementPredicate for &'a str {
+impl ElementPredicate for &str {
     /// Search by tag name
     fn match_element(&self, e: &Element) -> bool {
         (*self,).match_element(e)
@@ -602,7 +602,7 @@ pub trait AttributePredicate {
     fn match_attribute(&self, n: &AttributeName) -> bool;
 }
 
-impl<'a, 'b> AttributePredicate for (&'a str, Option<&'b str>) {
+impl AttributePredicate for (&str, Option<&str>) {
     fn match_attribute(&self, n: &AttributeName) -> bool {
         n.local_name == self.0
             && match (&n.namespace, &self.1) {
@@ -613,7 +613,7 @@ impl<'a, 'b> AttributePredicate for (&'a str, Option<&'b str>) {
     }
 }
 
-impl<'a> AttributePredicate for &'a str {
+impl AttributePredicate for &str {
     /// Search by attribute name
     fn match_attribute(&self, n: &AttributeName) -> bool {
         n.local_name == *self
